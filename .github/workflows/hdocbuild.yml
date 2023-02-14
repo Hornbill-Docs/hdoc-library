@@ -1,4 +1,4 @@
-name: HDocBuild_Push
+name: HDocBuild
 on:
   # Triggers the workflow on push requests
   push:
