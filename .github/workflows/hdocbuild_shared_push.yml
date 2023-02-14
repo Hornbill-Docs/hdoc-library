@@ -4,13 +4,13 @@ on:
   workflow_call:
     inputs:
       config-path:
-        required: false
+      required: false
     secrets: inherit
-
+    
 jobs:
   validate:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
     
       # Checkout the relevant content - different for Push & Pull Request
       - name: Checkout For Push or Workflow Dispatch
