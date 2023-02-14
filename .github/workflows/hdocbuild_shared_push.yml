@@ -2,11 +2,7 @@ name: Push and Dispatch Reusable Workflow
 
 on:
   workflow_call:
-    inputs:
-      config-path:
-      required: false
-    secrets: inherit
-    
+  
 jobs:
   validate:
     runs-on: ubuntu-latest
