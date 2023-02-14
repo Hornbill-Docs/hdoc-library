@@ -4,6 +4,10 @@
   "description": "A library of shared/reusable HDocBook content",
   "publicSource": "--publicSource--",
   "version": "0.0.1",
+  "audience": ["public"],
+  "productFamily": "hdocs",
+  "tags": ["hdoc", "HDocBook", "Documentation", "Librasy"],
+  "languages": ["en"],
   "navigation": {
     "items": [
       {
