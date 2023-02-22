@@ -1,33 +1,19 @@
 name: HDocBuild
 on:
-  # Triggers the workflow on push requests
-  push:
-    paths-ignore:
-      - '.github/**'
-  
+ 
   # Triggers the workflow on pull request opened or reopened events
   pull_request_target:
     types: [opened, reopened]
     paths-ignore:
       - '.github/**'
 
-  # Allows us to run this workflow manually from the Actions tab
-  workflow_dispatch:
   
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     
-      # Checkout the relevant content - different for Push & Pull Request
-      - name: Checkout For Push or Workflow Dispatch
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: actions/checkout@v2
-        with:
-           ref: ${{ github.event.inputs.branch }}
-           fetch-depth: 0    
       - name: Checkout For Pull Request Target
-        if: github.event_name == 'pull_request_target'
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
@@ -58,7 +44,7 @@ jobs:
           
       # If build validation fails, and event trigger was a pull request  then close the pull request
       - name: Reject Pull Request
-        if: failure() && github.event_name == 'pull_request_target'
+        if: failure()
         uses: superbrothers/close-pull-request@v3
         with:
           comment: "Your pull request has been rejected as build validation has failed. See the Perform Validation step of the build job for more information: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
