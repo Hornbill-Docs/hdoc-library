@@ -1,0 +1,16 @@
+* `panic: runtime error: invalid memory address or nil pointer deference [recovered]...`
+  * This error suggests an incorrectly specified attribute in the conf file. Where information is being obtained from a directory attribute, the attribute must be in the following format: `{{.directoryAttributeName}}`
+* `Unable to Create User: Invalid value for parameter '[parameter name]': The text size provided (31 characters) is greater than the maximum allowable size of 20 characters for column [column name]`
+  * The contents of your directory attribute exceed the maximum number of characters that can be placed in the Hornbill database column.
+* `Unable to Create User: The value in element <userId> did not meet the required input pattern constraints. at location '/methodCall/params/userId' `
+  * The User ID contains characters that are not allowed. Please see the [accountIdType documentation](/esp-api/types/simple/accountIdType) for the User ID requirements. 
+* `Unable to Create User: [usedID] Error: The specified handle [Display Name] is already in use`
+  * By default, the "Handle" (Hornbill Display Name) must be unique. This error suggests a user account already exists in Hornbill which is using this handle. The duplicate-handle validation can be disabled via a setting found in Hornbill Configuration, under `Home > System > Advanced Settings` and filtering for `api.xmlmc.uniqueUserHandle.enable`
+* `Unable to Update User: Invalid value for parameter '[parameter name]': Error setting value for column '[column name]'. bad lexical cast: source type value could not be interpreted as target`
+  * This error indicates that the contents of your directory attribute are in a format that is not compatible with the type of the Hornbill database column. For example, you will get this when trying to place text into a database field that is of type "INT" (accepts integer values only).
+* `Unable to Load LDAP Attribute: '[LDAP attribute name]' For Input Param: '[Hornbill Parameter name]' `
+  * When the import utility is unable to load a particular LDAP attribute, this means that the attribute field in your directory does not contain a value. This error will not prevent the user account from being created or updated in Hornbill and can be considered more as a warning rather than an outright failure or problem.
+* `Unable to Set User Status [status name]: You have reached your user subscription limit of [xx], you will need to expand your subscription level if you wish to add more users`
+  * The utility is trying to update the user status of an existing user account from an inactive status (i.e. "archived" or "suspended") to "active". However, for this to be successful you must have some subscriptions available.
+* `Unable to run import, a previous import is still running`
+  * This can occur if the previous import has failed to complete. Perform a manual (non-scheduled) run of the import from the command line including the argument `-forcerun=true`. Future imports should now run without issue.
