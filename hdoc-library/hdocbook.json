@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "audience": ["public"],
   "productFamily": "hdocs",
-  "tags": ["hdoc", "HDocBook", "Documentation", "Librasy"],
+  "tags": ["hdoc", "HDocBook", "Documentation", "Library"],
   "languages": ["en"],
   "navigation": {
     "items": [
