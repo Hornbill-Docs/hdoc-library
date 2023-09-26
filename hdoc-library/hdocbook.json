@@ -2,7 +2,7 @@
   "docId": "hdoc-library",
   "title": "Hornbill Docs Shared Content Library",
   "description": "A library of shared/reusable HDocBook content",
-  "publicSource": "--publicSource--",
+  "publicSource": "https://github.com/Hornbill-Docs/hdoc-library",
   "version": "0.0.1",
   "audience": ["public"],
   "productFamily": "hdocs",
