@@ -12,8 +12,8 @@ Please read the [API Key documentation](/esp-fundamentals/security/api-keys) and
 
 The service account that you create must be of type `User` (not `Basic`), and be granted the following roles:
 
-- `User Import` - Allows the utility to create and update users, and associated records, in the Hornbill Platform.
-- `Basic User Role` - Allows the utility to Core basic user roles.
-- `Self Service User` - Allows the utility to assign Service Manager roles.
-- `Board BPM Access` - Allows the utility to assign Board Manager roles.
-- `Docmanager Portal` - Allows the utility to assign Document Manager roles.
+- **[User Import](/core-legacy-api/roles/content/userimport)** - Allows the utility to create and update users, and associated records, in the Hornbill Platform.
+- **Basic User Role** - Allows the utility to Core basic user roles.
+- **Self Service User** - Allows the utility to assign Service Manager roles.
+- **Board BPM Access** - Allows the utility to assign Board Manager roles.
+- **Docmanager Portal** - Allows the utility to assign Document Manager roles.
