@@ -1,4 +1,4 @@
-## Public Facing API Quality Standard
+# Public API Quality Standard
 It is possible to define and expose API's for the Hornbill Platform as well as each application can choose to expose one or more customer-facing API's. This document sets out the best practices and quality requirements that need to be met when crating a new, or exposing an existing API for customer consumption on the Hornbill Platform.
 
 ## Background
