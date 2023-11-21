@@ -3,7 +3,7 @@
   "title": "Hornbill Docs Shared Content Library",
   "description": "A library of shared/reusable HDocBook content",
   "publicSource": "https://github.com/Hornbill-Docs/hdoc-library",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "audience": [
     "public"
   ],
@@ -40,6 +40,10 @@
           {
             "text": "Hornbill Community License (HCL)",
             "link": "hdoc-library/agreements/hornbill-community-license"
+          },
+          {
+            "text": "Public Facing API Quality Standard",
+            "link": "hdoc-library/guides/customer-api-requirements"
           }
         ]
       }
