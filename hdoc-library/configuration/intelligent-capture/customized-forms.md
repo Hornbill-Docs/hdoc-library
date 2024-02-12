@@ -38,12 +38,15 @@ There are various field options and setting and these are explained below.
 #### Override Flags
 The Override Flags allows you to set the conditions under which this field will be displayed. This can be based on the answer or entry on a previous field.
 
-Field Type Settings
-Field Type - This specifies the type for the field you are adding
-Single line text field
-Use this option if you want to present the user with a single line input box
-Multi line text field
-Use this option if you want to present the user with a multi-line input box
+### Field Type Settings
+
+#### Field Type
+This specifies the type for the field you are adding
+
+* **Single line text field**
+    Use this option if you want to present the user with a single line input box.
+* **Multi line text field**
+    Use this option if you want to present the user with a multi-line input box.
 Static checkbox group
 Use this option if you want the user to select one or multiple values from a definable checkbox list
 Pcf custom form output.png
