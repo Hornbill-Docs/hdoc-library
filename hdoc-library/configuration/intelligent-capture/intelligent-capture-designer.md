@@ -49,3 +49,18 @@ On the Switch Capture node, you can configure this to link to a specific new pro
 :::tip
 With the introduction of the Switch Capture option, the behavior will alter slightly on the Services Details form, is as much as the user will now have to select the Next button if they are selecting either the Service or the Request Catalog Item in order to progress the capture workflow. Previously if a Request Catalog Item was chosen the capture would immediately progress without the need to click Next.
 :::
+
+## Sharing and Visibility
+Intelligent capture owners will be able to view their own captures, and captures which have been shared with them from the capture workflow list.
+
+When creating or editing a capture it is possible via the Manage Process Settings and Grant Access To option to share your process with:
+
+* Roles
+* Users
+* Groups
+
+It is possible to share captures with multiple users, roles and groups. Once a capture has been shared, the user will be able to view the capture from the Intelligent Capture list.
+
+To remove visibility to a specific User, Role or Group simply select the Trash Can icon next to the item you wish to stop sharing the capture with.
+
+To enforce the above sharing and visibility controls, ensure the system setting security.bpm_access_controls.enabled is set to On from the Platform Configuration.
