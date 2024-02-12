@@ -43,51 +43,36 @@ The Override Flags allows you to set the conditions under which this field will 
 #### Field Type
 This specifies the type for the field you are adding
 
-* **Single line text field**
-    Use this option if you want to present the user with a single line input box.
-* **Multi line text field**
-    Use this option if you want to present the user with a multi-line input box.
-Static checkbox group
-Use this option if you want the user to select one or multiple values from a definable checkbox list
-Pcf custom form output.png
-Dynamic checkbox group
-Use this option if you want the user to select one or multiple values from a pre-defined checkbox list, select a data provider and optionally filter the returned results
-Simple List - Choose an existing simple list as your Data Provider
-Data Query - Choose from a list of supplied data queries as your Data Provider (All Sites, My Sites, All Assets, Assets by Class, Assets by Type, All Users, Co-Workers, Basic Users)
-Static drop down select box
-Use this option if you want the user to select one option from a definable select box list
-Dynamic drop down select box
-Use this option if you want the user to select one option from a pre-defined select box list, select a data provider and optionally filter the returned results
-Simple List - Choose an existing simple list as your Data Provider
-Data Query - Choose from a list of supplied data queries as your Data Provider (All Sites, My Sites, All Assets, Assets by Class, Assets by Type, All Users, Co-Workers, Basic Users)
+* **Single line text field**<br>Use this option if you want to present the user with a single line input box.
+* **Multi line text field**<br>Use this option if you want to present the user with a multi-line input box.
+* **Static checkbox group**<br>Use this option if you want the user to select one or multiple values from a definable checkbox list.
+* **Dynamic checkbox group**<br>Use this option if you want the user to select one or multiple values from a pre-defined checkbox list, select a data provider and optionally filter the returned results.
+* **Simple List**<br>Choose an existing simple list as your Data Provider.
+* **Data Query**<br>Choose from a list of supplied data queries as your Data Provider (All Sites, My Sites, All Assets, Assets by Class, Assets by Type, All Users, Co-Workers, Basic Users).
+* **Static drop down select box**<br>Use this option if you want the user to select one option from a definable select box list.
+* **Dynamic drop down select box**<br>Use this option if you want the user to select one option from a pre-defined select box list, select a data provider and optionally filter the returned results.
+* **Simple List**<br>Choose an existing simple list as your Data Provider.
+* **Data Query**<br>Choose from a list of supplied data queries as your Data Provider (All Sites, My Sites, All Assets, Assets by Class, Assets by Type, All Users, Co-Workers, Basic Users).
+* **Static Radioset**<br>Use this option if you want the user to select one option from a definable radio button set.
+* **Dynamic radioset**<br>Use this option if you want the user to select one option from a pre-defined radio button set. Select a data provider and optionally filter the returned results
+    * Simple List - Choose an existing simple list as your Data Provider
+    * Data Query - Choose from a list of supplied data queries as your Data Provider (All Sites, My Sites, All Assets, Assets by Class, Assets by Type, All Users, Co-Workers, Basic Users)
+* **Date Control**<br>Use this option if you only require the user to provide a date.
+* **Date & Time Control**<br>Use this option if you require the user to provide both a date and time.
+* **User group picker**<br>Use this option if you want the user to select a group or groups from the pre-defined organizational groupings.
+* **Label**<br>Use this option if you want to add a separator into the questions being asked, or on the answers section of the request.
 
-Static Radioset
-Use this option if you want the user to select one option from a definable radio button set
-Dynamic radioset
-Use this option if you want the user to select one option from a pre-defined radio button set, , select a data provider and optionally filter the returned results
-Simple List - Choose an existing simple list as your Data Provider
-Data Query - Choose from a list of supplied data queries as your Data Provider (All Sites, My Sites, All Assets, Assets by Class, Assets by Type, All Users, Co-Workers, Basic Users)
-Date Control
-Use this option if you only require the user to provide a date
-Date & Time Control
-Use this option if you require the user to provide both a date and time
-Orion user group picker
-Use this option if you want the user to select a group or groups from the pre-defined organizational groupings
-Label
-Use this option if you want to add a separator into the questions being asked, or on the answers section of the request
 Different field types will have different configuration options available to them, including:
+* Ability to set default values.
+* Ability to define values for static checkbox, static select box, static radio set options (display name and value).
+* Regex Field Validation.
 
-Ability to set default values
-Ability to define values for static checkbox, static select box, static radio set options (display name and value)
-Regex Field Validation
-Displaying Conditional Fields
-
+## Displaying Conditional Fields
 This feature allows for the showing or hiding of fields on custom capture forms based on the answers to other questions on either the same custom capture form, or answers to questions on previous capture forms (conditions).
-
-Add a new form field to a capture form and untick the This field will be visible on the form option under the Default Flags tab
-A new Override flags tab will be visible next to the Default Flags, navigate here and select Add new condition
-Give the condition a name and choose options such as This field will be visible on the form
-Using the If the following is true option to add conditions under which this field will be shown / hidden, this can be based on a combination of values (answers) to other questions (fields) on the same or previous capture forms. Select apply Settings when finished.
-It is possible to set multiple sets of Conditions under which a field may be shown. Simply add more conditions under the Override Flags tab using the Add new condition option
-Where multiple conditions are listed, these will be evaluated from the top down until a match is found, the evaluation will stop here and no further conditions will be checked).
-Complete the Field Type Settings options to define the attributes of the conditional field.
+* Add a new form field to a capture form and untick the `This field will be visible on the form` option under the Default Flags tab
+* A new Override flags tab will be visible next to the Default Flags, navigate here and select Add new condition
+* Give the condition a name and choose options such as `This field will be visible on the form`
+* Using the `If the following is true` option to add conditions under which this field will be shown / hidden, this can be based on a combination of values (answers) to other questions (fields) on the same or previous capture forms. Select apply Settings when finished.
+* It is possible to set multiple sets of Conditions under which a field may be shown. Simply add more conditions under the Override Flags tab using the Add new condition option
+* Where multiple conditions are listed, these will be evaluated from the top down until a match is found, the evaluation will stop here and no further conditions will be checked.
+* Complete the `Field Type Settings` options to define the attributes of the conditional field.
