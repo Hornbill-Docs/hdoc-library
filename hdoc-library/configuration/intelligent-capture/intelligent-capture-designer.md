@@ -64,3 +64,11 @@ It is possible to share captures with multiple users, roles and groups. Once a c
 To remove visibility to a specific User, Role or Group simply select the Trash Can icon next to the item you wish to stop sharing the capture with.
 
 To enforce the above sharing and visibility controls, ensure the system setting security.bpm_access_controls.enabled is set to On from the Platform Configuration.
+
+## Intelligent Capture Options
+Each capture workflow has a number of configuration options
+
+* **Download**<br>Download the definition file - downloads to a .txt file, a copy of the current capture workflow.
+* **Upload**<br>Upload a pcf.txt file to the capture workflow - this will replace the current capture workflow content.
+* **Print**<br>Print out a document that provides a graphical representation of the capture workflow.
+* **Save** (Validate, Activate, De-activate)<br>After the creation or editing of a capture workflow, your workflow needs to be saved and then activated to make it available for use. Any capture workflow that you wish to keep but do not have available for use can be deactivated.
