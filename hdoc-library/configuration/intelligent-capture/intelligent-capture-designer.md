@@ -1,14 +1,16 @@
-Intelligent Capture is a graphical workflow tool that provides a new and simple way to define the capturing of information for a particular application. An application that uses Intelligent Capture will include serveral small forms for collecting information related to the application. These forms can be optionally added, ordered, and branched depending on the information being captured.
+Intelligent Capture is a graphical workflow tool that provides a simple way to define the capturing of information for a particular application. An application that uses Intelligent Capture will include serveral small forms for collecting information related to the application. These forms can be optionally added, ordered, and branched depending on the information being captured.
 
 ## Nodes
 When building a capture workflow there are a few different nodes that are available to use when considering your design.
 
+![Capture Nodes](_books/hdoc-library/configuration/intelligent-capture/images/capture-nodes.png)
+
 * **Start**<br>Every capture workflow will have a Start node. This is the entry point for all capture scripts.
-* **Form**<br>You can choose from a number of pre-configured small forms (in Form Properties) and place them in the sequence you need.
+* **Form**<br>You can choose from a number of pre-configured forms (in Form Properties) and place them in the sequence you need.
 * **Custom Form**<br>Allows you to create your own form complete with custom fields and values.
-* **Branch**<br>Allows a custom expression to alter the flow to show different PCF's.
-* **Switch**<br>Allows you to link capture workflows together and seamlessly switch from one to another
-* **End**<brEvery capture flow will have at least one of these to end the flow.
+* **Branch**<br>Allows a capture script to take alternative branches within the script based on defined expressions.
+* **Switch Capture**<br>Allows you to link capture workflows together and seamlessly switch from one to another.
+* **End**<br>Every capture flow must have at least one of these to end the flow.
 * **Cancel**<br>The Cancel node allows the capture workflow to exit without any further processing. This behaves the same as if the user had selected the cancel button that is available when filling out a capture. The user will be returned to where the Intelligent Capture was initiated from.
 
 ## Branches
