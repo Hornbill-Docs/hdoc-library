@@ -3,8 +3,6 @@ Intelligent Capture is a graphical workflow tool that provides a simple way to d
 ## Nodes
 When building a capture workflow there are a few different nodes that are available to use when considering your design.
 
-![Capture Nodes](_books/hdoc-library/configuration/intelligent-capture/images/capture-nodes.png)
-
 * **Start**<br>Every capture workflow will have a Start node. This is the entry point for all capture scripts.
 * **Form**<br>You can choose from a number of pre-configured forms (in Form Properties) and place them in the sequence you need.
 * **Custom Form**<br>Allows you to create your own form complete with custom fields and values.
