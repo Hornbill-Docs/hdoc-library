@@ -2,25 +2,28 @@ name: Push and Dispatch Reusable Workflow
 
 on:
   workflow_call:
+    inputs:
+      branch:
+        required: true
+        type: string
   
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
     
-      # Checkout the relevant content - different for Push & Pull Request
-      - name: Checkout For Push or Workflow Dispatch
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: actions/checkout@v2
+      # Setup NodeJS Active LTS (20 currently, moving to 22 as the next LTS)
+      - uses: actions/setup-node@v4
         with:
-           ref: ${{ github.event.inputs.branch }}
+          node-version: 22
+
+      # Checkout the relevant content for push or workflow_dispatch
+      - name: Checkout For Push or Workflow Dispatch
+        uses: actions/checkout@v4
+        with:
+           ref: ${{ inputs.branch }}
            fetch-depth: 0    
       
-      # Setup NodeJS LTS (18 currently)
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
       # Install hdoc-tools globally
       - name: Install hdoc-tools
         run: npm install hdoc-tools -g
@@ -39,7 +42,7 @@ jobs:
             printf "$valout"
             exit 1
           fi
-          
+  
       # If build validation is successful, echo message
       - name: Build Success
         if: success()
