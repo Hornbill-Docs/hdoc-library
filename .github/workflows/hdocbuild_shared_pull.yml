@@ -1,4 +1,4 @@
-name: Shared workflow for validating push requests
+name: Shared workflow for validating pull requests
 
 on:
   workflow_call:
