@@ -1,4 +1,4 @@
-name: Push and Dispatch Reusable Workflow
+name: Shared workflow for validating push requests
 
 on:
   workflow_call:
