@@ -59,6 +59,11 @@ This specifies the type for the field you are adding
     * Data Query - Choose from a list of supplied data queries as your Data Provider (All Sites, My Sites, All Assets, Assets by Class, Assets by Type, All Users, Co-Workers, Basic Users)
 * **Date Control**<br>Use this option if you only require the user to provide a date.
 * **Date & Time Control**<br>Use this option if you require the user to provide both a date and time.
+* **Between Date Control**<br>Use this option if you require the user to provide date range. This feature allows you to restrict the range to a specific set of dates using the following options:
+	*  "Max Allowed Days Between": This allows you to set the maximum number of days between the start and end date. For example, a value of 2 means that the end date cannot be more than 2 days after the start date. 
+	*  "Date Range Start": This option allows you to set a relative date from the current date. For instance, a value of 0 means starting from today, 1 means starting from tomorrow, and 7 means starting from next week. Negative values can also be used to go backwards in time, such as -1 for yesterday.
+	* "Date Range End": This option follows the same rules as the start date, allowing you to set a relative date from the current date.
+* **Between Date & time Control**<br>Use this option if you require the user to provide both a date and time.
 * **User group picker**<br>Use this option if you want the user to select a group or groups from the pre-defined organizational groupings.
 * **Label**<br>Use this option if you want to add a separator into the questions being asked, or on the answers section of the request.
 
