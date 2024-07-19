@@ -37,9 +37,9 @@ jobs:
               printf "$result"
               exit 0
           else
-            valout=$(echo "$result" | awk '/Validation Output/,0')
+            #valout=$(echo "$result" | awk '/Validation Output/,0')
             printf "Build Failed!\n\n-----------------------\n"
-            printf "$valout"
+            printf "$result"
             exit 1
           fi
   
