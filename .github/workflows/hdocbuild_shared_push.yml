@@ -15,7 +15,7 @@ jobs:
       # Setup NodeJS Active LTS (20 currently, moving to 22 as the next LTS)
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '22.3.x'
 
       # Checkout the relevant content for push or workflow_dispatch
       - name: Checkout For Push or Workflow Dispatch
