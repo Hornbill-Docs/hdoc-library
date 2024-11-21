@@ -40,9 +40,73 @@
           {
             "text": "Hornbill Community License (HCL)",
             "link": "hdoc-library/agreements/hornbill-community-license"
+          }
+        ]
+      },
+      {
+        "text": "Configuration",
+        "expand": true,
+        "items": [
+          {
+            "text": "Apps/Translations",
+            "link": "hdoc-library/configuration/apps/translations/translation-list"
           },
           {
-            "text": "Public Facing API Quality Standard",
+            "text": "Intelligent Capture",
+            "expand": true,
+            "items": [
+              {
+                "text": "Customized Forms",
+                "link": "hdoc-library/configuration/intelligent-capture/customized-forms"
+              },
+              {
+                "text": "Intelligent Capture Designer",
+                "link": "hdoc-library/configuration/intelligent-capture/intelligent-capture-designer"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Data Imports",
+        "expand": true,
+        "items": [
+          {
+            "text": "Requirements",
+            "link": "hdoc-library/dataimports/requirements"
+          },
+          {
+            "text": "Users",
+            "expand": true,
+            "items": [
+              {
+                "text": "API Keys",
+                "link": "hdoc-library/dataimports/users-apikeys"
+              },
+              {
+                "text": "Troubleshooting",
+                "link": "hdoc-library/dataimports/users-troubleshooting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Disclaimers",
+        "expand": true,
+        "items": [
+          {
+            "text": "Third-party Integrations",
+            "link": "hdoc-library/disclaimers/third-party-integrations"
+          }
+        ]
+      },
+      {
+        "text": "Guides",
+        "expand": true,
+        "items": [
+          {
+            "text": "Customer API Requirements",
             "link": "hdoc-library/guides/customer-api-requirements"
           }
         ]
