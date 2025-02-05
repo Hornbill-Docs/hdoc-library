@@ -62,6 +62,10 @@
               {
                 "text": "Intelligent Capture Designer",
                 "link": "hdoc-library/configuration/intelligent-capture/intelligent-capture-designer"
+              },
+              {
+                "text": "Field conditions",
+                "link": "hdoc-library/configuration/intelligent-capture/field-conditions"
               }
             ]
           }
