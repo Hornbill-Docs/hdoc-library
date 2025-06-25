@@ -66,6 +66,7 @@ This specifies the type for the field you are adding
 * **Between Date & time Control**<br>Use this option if you require the user to provide both a date and time.
 * **User group picker**<br>Use this option if you want the user to select a group or groups from the pre-defined organizational groupings.
 * **Label**<br>Use this option if you want to add a separator into the questions being asked, or on the answers section of the request.
+* **File Upload**<br>Include a field on a form that allow a user to upload a file.  Options include being able to add multiple file for a single field and allowing a user to paste content.
 
 Different field types will have different configuration options available to them, including:
 * Ability to set default values.
