@@ -1,35 +1,39 @@
 This feature allows for the change field default flags properties on custom capture forms based on the answers to other questions on either the same custom capture form, or answers to questions on previous capture forms.
+
 **In short to make it happen you need to define conditions and flags that will be overwritten once condition will be evaluated as true.**
 
 ### Field "Default flags" section
 
 Every field has a set of flags:
+
 * Required
 * Visibility
 * Read only
 * Visibility for read only field without value (empty field)
 
-<img src="/_books/hdoc-library/images/field-flags.png" >
+<img src="/_books/hdoc-library/images/field-flags.png" alt="Field flags">
 
 ### Field "Override flags" section
 
 Adjacent to "Default flags," there is a section titled "Override flags." In this section, you can define a list of conditions with their corresponding flags that should be applied if the condition is evaluated as true.
 
 Depending on the condition outcome (true or false), it is possible to change the following field properties:
+
 * require
 * visibility
 * read only
 * read only visibility when there is no value
 
-<img src="/_books/hdoc-library/images/field-override-flags.png" >
+<img src="/_books/hdoc-library/images/field-override-flags.png" alt="Field override flags">
 
 The list of conditions is evaluated in the order of appearance, one by one, and it stops at the first condition that is evaluated as true.
 
 ### Condition construction
 
-<img src="/_books/hdoc-library/images/field-flags-condition.png" >
+<img src="/_books/hdoc-library/images/field-flags-condition.png" alt="Field flag condition">
 
 To create a condition, you need to define three options:
+
 1. "Name" - This will be present on the list in the "Override Flags" section.
 2. "Set Flags To" - Here, you define the flags and how they will be set when the condition is true.
 3. "If The Following Is True" - This is where you define the condition, which can include more than one criterion.
@@ -42,7 +46,7 @@ For instance, in the screenshot below, if the field value is "yes," it will be e
 
 ### Comparision operators
 
-<img src="/_books/hdoc-library/images/field-condition-operators.png" >
+<img src="/_books/hdoc-library/images/field-condition-operators.png" alt="Field condition operators">
 
 |Operator|Description|Expected type of value|Example values
 |-|-|-|-|
@@ -61,12 +65,12 @@ For instance, in the screenshot below, if the field value is "yes," it will be e
 |**contains**||number or string|"**specific**", "**10**"|
 |**doesn't contain**||number or string|"**specific**", "**10**"|
 
-
 :::tip
 Please note that not every type of value makes sense to compare with every operator. For example, for values like numbers, it's appropriate to use < or >, whereas for strings, it is better to use "starts with" or "contains."
 :::
 
 ### Displaying Conditional Fields
+
 * Add a new form field to a capture form and untick the `This field will be visible on the form` option under the Default Flags tab
 * A new Override flags tab will be visible next to the Default Flags, navigate here and select Add new condition
 * Give the condition a name and choose options such as `This field will be visible on the form`
