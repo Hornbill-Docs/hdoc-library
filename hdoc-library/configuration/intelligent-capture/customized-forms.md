@@ -1,3 +1,5 @@
+# Customized Forms
+
 As well as standard Capture forms that are provided with each app, Hornbill also provides the ability to create your own customized forms. With custom forms, you can create multiple questions of different field types for users and customers to answer during Intelligent Capture.
 
 ## Node Properties
