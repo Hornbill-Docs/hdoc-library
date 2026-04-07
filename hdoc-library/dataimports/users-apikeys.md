@@ -17,3 +17,4 @@ The service account that you create must be of type `User` (not `Basic`), and be
 - **Self Service User** - Allows the utility to assign Service Manager roles.
 - **Board BPM Access** - Allows the utility to assign Board Manager roles.
 - **Docmanager Portal** - Allows the utility to assign Document Manager roles.
+- **Knowledge User Role** - Allows the utility to assign the Knowledge User role.
