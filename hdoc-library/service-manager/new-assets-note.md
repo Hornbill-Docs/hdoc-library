@@ -1,1 +1,3 @@
+:::note
 The following documentation describes and supports the new asset mode that is currently in preview. For more information about what's new and how to enable it, see the [New assets mode infokit](/servicemanager-config/assets/new-assets-mode-infokit).
+:::
