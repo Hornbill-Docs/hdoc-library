@@ -1,1 +1,1 @@
-The following documentation describes and supports the new asset mode that is currently in preview. For more information about what's new and how to enable it, see the [new assets mode information kit](/servicemanager-config/assets/new-assets-mode-infokit).
+This document describes and supports the new asset management that is currently in preview. On July 27, 2026, this preview will replace the current asset management, which will no longer be available. For more information see the [new assets mode information kit](/servicemanager-config/assets/new-assets-mode-infokit).
