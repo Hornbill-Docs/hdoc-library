@@ -17,6 +17,9 @@ There is a maximum of 200 questions across all forms within a single capture flo
 
 * **Language**: A default language version of the custom form is provided, but you can opt to create different language versions of the custom form by selecting another available language and populating the labels, answers in different languages.
 * **Form Id**: This is the unique identifier for the custom form, this can be used later to identify the answers to your questions when using the Hornbill Business Process Workflow engine. The Form Id must be at least 3 characters in length.
+  :::note
+  When using the [Switch Capture](/esp-config/automation/intelligent-capture-designer#switch-capture) node, Form IDs must be unique across the different captures that could be switched to. Consider naming the forms in a way that includes a reference to the capture that the form is on.
+  :::
 * **Form Prompt**: This is any text you wish to appear with the custom form to help identify it's purpose.
 * **Never Skip Form**: Setting to True will ensure that this form is never bypassed in your capture flow, even if custom questions have default values set and the questions are not set to mandatory. This will ensure the user will always be presented with the form to at least validate the default choices, or change them if required.
 
