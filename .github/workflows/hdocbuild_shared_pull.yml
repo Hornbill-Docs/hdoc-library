@@ -21,17 +21,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      # Setup NodeJS Active LTS (20 currently, moving to 22 as the next LTS)
-      - uses: actions/setup-node@v4
+      # Setup NodeJS Active LTS (24 currently)
+      - uses: actions/setup-node@v6.4.0
         with:
-          node-version: '22.3.x'
+          node-version: '24.17.x'
 
-      # Checkout the relevant content for push or workflow_dispatch
+      # Checkout fork PR code for validation.
+      # allow-unsafe-pr-checkout: true is set because this workflow is triggered via pull_request_target
+      # (required so GITHUB_TOKEN can close rejected PRs), which causes actions/checkout@v7+ to block
+      # fork code checkout by default as a "pwn request" guard.
+      #
+      # Risk assessment: acceptable here because:
+      #   - Fork content is treated as data only; no fork scripts are executed
+      #   - hdoc-tools is installed from the npm registry, not from the PR
+      #   - hdoc validate only reads markdown/config files, it does not execute fork code
+      #   - No auto-merge is in place; a human must review and approve all PRs
+      #   - GITHUB_TOKEN expires at end of workflow run and is scoped to this repo only
+      #   - Attacker cannot approve their own PR (GitHub blocks self-approval)
       - name: Checkout For Push or Workflow Dispatch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.0
         with:
            ref: ${{ inputs.branch }}
-           fetch-depth: 0    
+           fetch-depth: 0
+           allow-unsafe-pr-checkout: true
       
       # Install hdoc-tools globally
       - name: Install hdoc-tools
