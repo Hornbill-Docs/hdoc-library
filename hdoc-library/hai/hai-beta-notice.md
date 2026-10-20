@@ -1,1 +1,1 @@
-HAi is currently part of a closed beta program, Please speak to your customer success representative if you would like to take part.
+Access to HAi is currently by request only. This request can be made through the [Hornbill Success Portal](https://success.hornbill.com/hornbill) or by contacting your Hornbill customer success representative.
