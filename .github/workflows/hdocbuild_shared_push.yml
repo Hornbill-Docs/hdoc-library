@@ -26,7 +26,7 @@ jobs:
       
       # Install hdoc-tools globally
       - name: Install hdoc-tools
-        run: npm install hdoc-tools -g
+        run: npm install hdoc-tools@latest -g --onnxruntime-node-install-cuda=skip
      
      # Run hdoc validate against checked-out content
       - name: Perform Validation
